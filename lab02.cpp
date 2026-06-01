@@ -31,7 +31,7 @@ else if (s1.length() > s2.length())
 else //strings equal
     return 0;
 }
-//Test cases for function, print
+//Test cases for function, print, tests
 int main()
 {
     cout << "The comparison of \"String one\" and \"string two\" returns "
@@ -51,6 +51,6 @@ int main()
     assert(strcmp_case_insensitive("", "") == 0);
 
     cout << "all tests passed!" << endl;
-
+//Completed two different tests
     return 0;
 }
