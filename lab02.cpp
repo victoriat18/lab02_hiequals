@@ -2,7 +2,7 @@
 #include <string> 
 #include <cctype>
 #include <cassert>
-
+//note: This program showcases comparison of two strings without considering upper or lowercase letter "Hi == hi". 
 using namespace std;
 //Function compares two strings, not minding upper or lower case
 int strcmp_case_insensitive(const string& s1, const string& s2)
@@ -25,7 +25,7 @@ int strcmp_case_insensitive(const string& s1, const string& s2)
 }
 //If one string is shorter, it is considered 'smaller'
 if (s1.length() < s2.length())
-    return -1;
+    return -1; 
 else if (s1.length() > s2.length())
     return 1;
 else //strings equal
@@ -34,6 +34,7 @@ else //strings equal
 //Test cases for function, print, tests
 int main()
 {
+    // Output (cout) test
     cout << "The comparison of \"String one\" and \"string two\" returns "
          << strcmp_case_insensitive("String one", "string two") << "." << endl;
 
@@ -51,6 +52,6 @@ int main()
     assert(strcmp_case_insensitive("", "") == 0);
 
     cout << "all tests passed!" << endl;
-//Completed two different tests
+//completed two different tests, Output (cout) and Assert tests.
     return 0;
 }
