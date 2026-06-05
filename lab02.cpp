@@ -44,7 +44,7 @@ int main()
     cout << "The comparison of \"String two\" and \"string one\" returns "
          << strcmp_case_insensitive("String two", "string one") << "." << endl;
 
-    // assert tests
+    // assert tests to verify expected result
     assert(strcmp_case_insensitive("Hi", "hi") == 0);
     assert(strcmp_case_insensitive("String one", "string one") == 0);
     assert(strcmp_case_insensitive("String one", "string two") < 0);
