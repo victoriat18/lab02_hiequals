@@ -1,7 +1,7 @@
 #include <iostream>
-#include <string> 
-#include <cctype>
-#include <cassert>
+#include <string> //for string objects
+#include <cctype> // for character function, tolower()
+#include <cassert> // used to verify test cases
 //note: This program showcases comparison of two strings without considering upper or lowercase letter "Hi == hi". 
 using namespace std;
 //Function compares two strings, not minding upper or lower case
@@ -31,7 +31,7 @@ else if (s1.length() > s2.length())
 else //strings equal
     return 0;
 }
-//Test cases for function, print, tests
+//Test cases for function, print & assert tests
 int main()
 {
     // Output (cout) test
